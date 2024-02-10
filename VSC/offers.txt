@@ -1,0 +1,14 @@
+{'name': 'Jassim ', 'number': '23947926', 'skills': 'Electrical', 'resources': 'Fuel', 'longitude': '-3.5375976562500004', 'latitude': '50.7449719762088'}
+{'name': 'Tarek Amar', 'number': '55508669', 'skills': 'Cooking', 'resources': 'Illumination', 'longitude': '-0.10299682617187501', 'latitude': '51.50756719022885'}
+{'name': 'Jassim ', 'number': '23947926', 'skills': 'Electrical', 'resources': 'Fuel', 'longitude': '-3.5375976562500004', 'latitude': '50.7449719762088'}
+{'name': 'Tarek Amar', 'number': '55508669', 'skills': 'Cooking', 'resources': 'Illumination', 'longitude': '-0.10299682617187501', 'latitude': '51.50756719022885'}
+{'name': 'j', 'number': '234', 'skills': 'Medical', 'resources': 'Medicine', 'longitude': '-0.049610137939453125', 'latitude': '51.50026114770739'}
+{'name': 'Jassim ', 'number': '23947926', 'skills': 'Electrical', 'resources': 'Fuel', 'longitude': '-3.5375976562500004', 'latitude': '50.7449719762088'}
+{'name': 'Tarek Amar', 'number': '55508669', 'skills': 'Cooking', 'resources': 'Illumination', 'longitude': '-0.10299682617187501', 'latitude': '51.50756719022885'}
+{'name': 'j', 'number': '234', 'skills': 'Medical', 'resources': 'Medicine', 'longitude': '-0.049610137939453125', 'latitude': '51.50026114770739'}
+{'name': 'j20d', 'number': '5783882', 'skills': 'Electrical', 'resources': 'Medicine', 'longitude': '2.1708995103836064', 'latitude': '47.220314106056115'}
+{'name': 'Jassim ', 'number': '23947926', 'skills': 'Electrical', 'resources': 'Fuel', 'longitude': '-3.5375976562500004', 'latitude': '50.7449719762088'}
+{'name': 'Tarek Amar', 'number': '55508669', 'skills': 'Cooking', 'resources': 'Illumination', 'longitude': '-0.10299682617187501', 'latitude': '51.50756719022885'}
+{'name': 'j', 'number': '234', 'skills': 'Medical', 'resources': 'Medicine', 'longitude': '-0.049610137939453125', 'latitude': '51.50026114770739'}
+{'name': 'j20d', 'number': '5783882', 'skills': 'Electrical', 'resources': 'Medicine', 'longitude': '2.1708995103836064', 'latitude': '47.220314106056115'}
+{'name': 'wbd2', 'number': '502792', 'skills': 'Cooking', 'resources': 'Shelter', 'longitude': '-0.022315979003906253', 'latitude': '51.493934529773554'}

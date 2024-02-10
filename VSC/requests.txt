@@ -1,0 +1,9 @@
+{'name': 'Faris Bata', 'number': '26816849', 'skills': 'Cooking', 'resources': 'Fuel', 'longitude': '-3.7441404908895497', 'latitude': '50.70341617382632', 'arange': '10'}
+{'name': 'Faris', 'number': '33220099', 'skills': 'Cooking', 'resources': 'Water', 'longitude': '-0.11902999773155899', 'latitude': '51.49968409472661', 'arange': '10'}
+{'name': 'Faris Bata', 'number': '26816849', 'skills': 'Cooking', 'resources': 'Fuel', 'longitude': '-3.7441404908895497', 'latitude': '50.70341617382632', 'arange': '10'}
+{'name': 'Faris', 'number': '33220099', 'skills': 'Cooking', 'resources': 'Water', 'longitude': '-0.11902999773155899', 'latitude': '51.49968409472661', 'arange': '10'}
+{'name': 'uedj', 'number': '503792', 'skills': 'Construction/repair', 'resources': 'Raw-Material', 'longitude': '0.2342834556475282', 'latitude': '51.54054867041391', 'arange': '10'}
+{'name': 'Faris Bata', 'number': '26816849', 'skills': 'Cooking', 'resources': 'Fuel', 'longitude': '-3.7441404908895497', 'latitude': '50.70341617382632', 'arange': '10'}
+{'name': 'Faris', 'number': '33220099', 'skills': 'Cooking', 'resources': 'Water', 'longitude': '-0.11902999773155899', 'latitude': '51.49968409472661', 'arange': '10'}
+{'name': 'uedj', 'number': '503792', 'skills': 'Construction/repair', 'resources': 'Raw-Material', 'longitude': '0.2342834556475282', 'latitude': '51.54054867041391', 'arange': '10'}
+{'name': 'jass', 'number': '2947297', 'skills': 'Cooking', 'resources': 'Raw-Material', 'longitude': '3.0937510728836064', 'latitude': '46.34389476587769', 'arange': '9'}

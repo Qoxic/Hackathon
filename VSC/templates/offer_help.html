@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>offer Help</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+            input[type=text] {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            #map {
+                height: 300px;
+            }
+        </style>
+    </head>
+<body>
+    <form action="/offer_help" method="post">
+        <h2><center>Offer Your Skills and Resources</center></h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+       
+        <label for="number">number:</label>
+        <input type="text" id="number" name="number" required>
+
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills" required>
+            <option value="">Select a skill</option>
+            <option value="Medical">Medical</option>
+            <option value="Plumbing">Plumbing</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Construction/repair">Construction/repair</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Rescue">Rescue</option>
+            <option value="Protection">Protection</option>
+
+        </select>
+       
+        <label for="resources">Resources:</label>
+        <select id="resources" name="resources" required>
+            <option value="">Select a resource</option>
+            <option value="Food">Food</option>
+            <option value="Water">Water</option>
+            <option value="Shelter">Shelter</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Fuel">Fuel</option>
+            <option value="Medicine">Medicine</option>
+            <option value="Raw-Material">Raw-Material</option>
+            <option value="Illumination">Illumination</option>
+
+        </select>
+       
+        <label for="map">Location:</label>
+        <div id="map" style="height: 250px;"></div>
+        <input type="hidden" id="latitude" name="latitude">
+        <input type="hidden" id="longitude" name="longitude">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Leaflet JavaScript from chatGPT-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13); // Default location
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var marker;
+
+        function onMapClick(e) {
+            if (marker) {
+                map.removeLayer(marker);
+            }
+            marker = new L.marker(e.latlng).addTo(map);
+            document.getElementById('latitude').value = e.latlng.lat;
+            document.getElementById('longitude').value = e.latlng.lng;
+        }
+
+        map.on('click', onMapClick);
+
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var userLat = position.coords.latitude;
+                var userLng = position.coords.longitude;
+
+                map.setView(new L.LatLng(userLat, userLng), 13);
+                if (marker) {
+                    map.removeLayer(marker);
+                }
+                marker = new L.marker([userLat, userLng]).addTo(map);
+                document.getElementById('latitude').value = userLat;
+                document.getElementById('longitude').value = userLng;
+            }, function(error) {
+                console.warn(`Geolocation error (${error.code}): ${error.message}`);
+            }, {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
+            });
+        } else {
+            console.log("Geolocation is not supported by this browser.");
+        }
+    </script>
+</body>
+</html>

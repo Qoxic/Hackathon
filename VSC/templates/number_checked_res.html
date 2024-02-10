@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matched Requests and Offers</title>
+</head>
+<body>
+    <h1>Matched Requests and Offers</h1>
+    {% if matched %}
+        <ul>
+            {% for request, offer in matched_requests %}
+                <li>
+                    <strong>Request:</strong> {{ request['name'] }} ({{ request['number'] }})<br>
+                    <strong>Offer:</strong> {{ offer['name'] }} ({{ offer['number'] }})
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matched requests and offers found.</p>
+    {% endif %}
+</body>
+</html>
